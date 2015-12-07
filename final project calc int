@@ -1,14 +1,24 @@
 import re
 calc = input("Calculation ")
 calc1 = calc.lower()
-re.findall("[-+]?\d+[\.]?\d*", calc1)
+numlist = re.findall("[-+]?\d+[\.]?\d*", calc1)
 multiplication = ["times", "multiply", "x", "multiplied"]
 plus = ["plus", "added to"]
 divide = ["divided by"]
+minus = ["minus" "subract"]
 for t in multiplication:
     calc1 = calc1.replace(t, "*")
 for p in plus:
     calc1 = calc1.replace(p, "+")
 for d in divide:
     calc1 = calc1.replace(d, "/")
+sum2 = 0
+sum1 = calc1.count("sum")
+if sum1 > 0:
+    for x in numlist:
+         sum2 += float(x)
+        print(sum2)
+alph = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+for x in alph:
+    calc1 = calc1.replace(x, "")
 print(eval(calc1))
