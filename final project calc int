@@ -1,0 +1,11 @@
+import re
+calc = input("Calculation ")
+calc1 = calc.lower()
+re.findall("[-+]?\d+[\.]?\d*", calc1)
+multiplication = ["times", "multiply", "x", "multiplied"]
+plus = ["plus", "added to"]
+for t in multiplication:
+    calc1 = calc1.replace(xz, "*")
+for p in plus:
+    calc1 = calc1.replace(xz, "*")
+print(eval(calc1))
