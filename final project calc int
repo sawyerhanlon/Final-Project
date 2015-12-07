@@ -4,8 +4,11 @@ calc1 = calc.lower()
 re.findall("[-+]?\d+[\.]?\d*", calc1)
 multiplication = ["times", "multiply", "x", "multiplied"]
 plus = ["plus", "added to"]
+divide = ["divided by"]
 for t in multiplication:
-    calc1 = calc1.replace(xz, "*")
+    calc1 = calc1.replace(t, "*")
 for p in plus:
-    calc1 = calc1.replace(xz, "*")
+    calc1 = calc1.replace(p, "+")
+for d in divide:
+    calc1 = calc1.replace(d, "/")
 print(eval(calc1))
