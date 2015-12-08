@@ -47,18 +47,20 @@ if calc1.count("by") <= 0:
     print(eval(calc1))
 
 else:
-     for t in multiplication:
+    for t in multiplication:
         calc1 = calc1.replace(t, "*")
     for p in plus:
         calc1 = calc1.replace(p, "+")
     for d in divide:
         calc1 = calc1.replace(d, "/")
+    
+    
 
     if calc1.count("multiply") > 0:
         calc1 = calc1.replace("by", "*")
     
     elif calc1.count("divide") > 0:
-        calc1 = calc1.replace("by, "/")
+        calc1 = calc1.replace("by", "/")
     
     
     for x in alph:
