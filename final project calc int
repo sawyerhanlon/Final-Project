@@ -11,6 +11,8 @@ alph = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o
 if calc1.count("by") <= 0:
     for t in multiplication:
         calc1 = calc1.replace(t, "*")
+    for m in minus:
+        calc1 = calc1.replace(m, "-")
     for p in plus:
         calc1 = calc1.replace(p, "+")
     for d in divide:
@@ -43,12 +45,15 @@ if calc1.count("by") <= 0:
         print(div2)
     
     else:
-        calc1 = calc1.replace(x, "")
-    print(eval(calc1))
+        for x in alph:
+            calc1 = calc1.replace(x, "")
+        print(eval(calc1))
 
 else:
     for t in multiplication:
         calc1 = calc1.replace(t, "*")
+    for m in minus:
+        calc1 = calc1.replace(m, "-")
     for p in plus:
         calc1 = calc1.replace(p, "+")
     for d in divide:
