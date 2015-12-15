@@ -70,7 +70,11 @@ else:
     
     for x in alph:
         calc1 = calc1.replace(x, "")
-    print(eval(calc1))
+    calc1 = calc1.replace(" ", "")
+    if calc1.count("/0") > 0:
+        print("undefined")
+    else:
+        print(eval(calc1))
     
         
         
