@@ -10,7 +10,8 @@ alph = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o
 
 banter = 0
 bantz = ["wanker", "griffins shoes", "cheeky", "nandos", "m8", "broccoli assassin", "broccoli cut"]
-banbantz = ["pepe", "dank memes", 
+banbantz = ["pepe", "dank memes"]
+"""
 if len(numlist) < 3 and numlist.count("1") > 0:
     x = input("What the hell are you doing using a calculator for that. Would you like to roast back? yes, or no: ")
     if x == ("yes"):
@@ -18,10 +19,14 @@ if len(numlist) < 3 and numlist.count("1") > 0:
         for x in bantz:
             bantz2 = retort.count(x)
             banter += int(bantz2)
+    
+    else:
+        ("Bruh you must be in intro to banter...ive never heard shanter that bad")
     print("Bruh...what banter are you even in?")
     print("your banter count is {0}".format(banter))
-
-else:    
+"""
+#else:
+if True == True:
     if calc1.count("by") <= 0:
         for t in multiplication:
             calc1 = calc1.replace(t, "*")
