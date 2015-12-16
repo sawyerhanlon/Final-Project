@@ -10,9 +10,9 @@ alph = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o
 
 if len(numlist) < 3 and numlist.count("1") > 0:
     print("What the hell are you doing using a calculator for 1+1")
-    x = input("Would you like to roast back? yes, or no")
-    if x == yes:
-        retort = input("What would you like to say")
+    x = input("Would you like to roast back? yes, or no: ")
+    if x == ("yes"):
+        retort = input("What would you like to say: ")
     print("Bruh...what banter are you even in?")
 
 else:    
