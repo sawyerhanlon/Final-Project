@@ -9,8 +9,8 @@ minus = ["minus" "subract"]
 alph = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 banter = 0
-bantz = ["wanker", "griffins shoes", "cheeky", "nandos", "m8", "broccoli assassin", "broccoli cut"]
-banbantz = ["pepe", "dank memes"]
+bantz = ["demar derozan", "barkevious levon mingo", "wanker", "griffins shoes", "cheeky", "nandos", "m8", "broccoli assassin", "broccoli cut"]
+banbantz = ["pepe", "dank memes", "your mum", "sue", "d'brickashaw", "water resistant", "kylo ren", "dima is a legend"]
 
 if len(numlist) < 3 and numlist.count("1") > 0:
     x = input("What the hell are you doing using a calculator for that. Would you like to roast back? yes, or no: ")
