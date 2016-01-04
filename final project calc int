@@ -19,7 +19,7 @@ if len(numlist) < 3 and numlist.count("1") > 0:
         for x in bantz:
             bantz2 = retort.count(x)
             banter += int(bantz2)
-    
+#You didn't sign out again.......
     else:
         ("Bruh you must be in intro to banter...ive never heard shanter that bad")
     print("Bruh...what banter are you even in?")
