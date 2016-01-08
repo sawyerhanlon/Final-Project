@@ -26,12 +26,20 @@ if len(numlist) < 3 and numlist.count("1") > 0:
             banter += int(bantz2)
         for x in badbantz:
             bantz3 = retort.count(x)
-            banter += int(bantz3)
-            
+            banter -= int(bantz3)
+    
     else:
         ("Bruh you must be in intro to banter...ive never heard shanter that bad")
     print("Bruh...what banter are you even in?")
-    print("your banter count is {0}".format(banter))
+    if banter <= 0:
+        print("Hows that F in intro to banter treating you")
+    elif banter > 0 and banter < 3:
+        print("Did your banter placement test put you into banter 2 reg, or did you fail out of the honors track on your own")
+    elif banter > 3 and banter < 5:
+        print("I guess you have some solid banter for a 4 reg student, but its no match for my p.HD in savage banter")
+    else:
+        print("Wow my friend...you have defeated me.  What sort of meme lord was teaching your banter 5H class to make you have such witty banter")
+    
 else:
     if calc1.count("by") == 0:
         for t in multiplication:
@@ -46,7 +54,7 @@ else:
         sum1 = 0
         sum2 = calc1.count("sum")
 
-        diff1 = calc1.count("diff")
+        diff1 = calc1.count("difference")
 
         prod1 = calc1.count("product")
 
@@ -100,8 +108,3 @@ else:
             print("undefined")
         else:
             print(eval(calc1))
-    
-        
-        
-            
-
