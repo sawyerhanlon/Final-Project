@@ -108,3 +108,6 @@ else:
             print("undefined")
         else:
             print(eval(calc1))
+            
+            
+            
