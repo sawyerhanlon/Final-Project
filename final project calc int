@@ -31,6 +31,7 @@ if len(numlist) < 3 and numlist.count("1") > 0:
     else:
         ("Bruh you must be in intro to banter...ive never heard shanter that bad")
     print("Bruh...what banter are you even in?")
+    
     if banter <= 0:
         print("Hows that F in intro to banter treating you")
     elif banter > 0 and banter < 3:
