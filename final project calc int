@@ -33,7 +33,7 @@ if len(numlist) < 3 and numlist.count("1") > 0:
     print("Bruh...what banter are you even in?")
     print("your banter count is {0}".format(banter))
 else:
-    if calc1.count("by") <= 0:
+    if calc1.count("by") == 0:
         for t in multiplication:
             calc1 = calc1.replace(t, "*")
         for m in minus:
@@ -86,20 +86,20 @@ else:
         
                             
 
-    if calc1.count("multiply") > 0:
-        calc1 = calc1.replace("by", "*")
+        if calc1.count("multiply") > 0:
+            calc1 = calc1.replace("by", "*")
     
-    elif calc1.count("divide") > 0:
-        calc1 = calc1.replace("by", "/")
+        elif calc1.count("divide") > 0:
+            calc1 = calc1.replace("by", "/")
     
     
-    for x in alph:
-        calc1 = calc1.replace(x, "")
-    calc1 = calc1.replace(" ", "")
-    if calc1.count("/0") > 0:
-        print("undefined")
-    else:
-        print(eval(calc1))
+        for x in alph:
+            calc1 = calc1.replace(x, "")
+        calc1 = calc1.replace(" ", "")
+        if calc1.count("/0") > 0:
+            print("undefined")
+        else:
+            print(eval(calc1))
     
         
         
